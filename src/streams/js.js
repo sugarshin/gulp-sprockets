@@ -2,7 +2,6 @@
  * @fileoverview JavaScript stream.
  */
 
-import assign    from 'object-assign';
 import stream    from 'event-stream';
 import builder   from '../builders/js';
 import directive from '../directives/js';
@@ -16,7 +15,7 @@ function defaultOptions() {
  * @params {Object} options .
  */
 export default function (options) {
-  options = assign(defaultOptions(), options);
+  options = Object.assign(defaultOptions(), options);
 
   return stream.through(function(vFile) {
     if (!vFile.isNull()) {

@@ -3,7 +3,6 @@
  */
 
 import _      from "lodash";
-import assign from 'object-assign';
 import fs     from 'fs';
 import path   from 'path';
 
@@ -28,7 +27,7 @@ export class Assets {
    * @param {Object} assetPaths .
    */
   init(assetPaths) {
-    assetPaths = assign(defaultAssetPaths(), assetPaths);
+    assetPaths = Object.assign(defaultAssetPaths(), assetPaths);
 
     this._assetPath = path.resolve(assetPaths.app);
 
