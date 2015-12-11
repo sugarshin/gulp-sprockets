@@ -17,6 +17,7 @@
   "scripts": {
     "build": "gulp",
     "watch": "gulp watch",
+    "postinstall": "npm run build",
     "test": "mocha --require babel-core/register --recursive"
   },
   "keyword": [
