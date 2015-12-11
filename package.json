@@ -8,7 +8,9 @@
     "url": "https://github.com/waka/gulp-sprockets.git"
   },
   "main": "./lib/sprockets.js",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "directories": {
     "test": "test"
   },
